@@ -1,0 +1,11 @@
+platform :ios, "9.0"
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'KKTest' do
+
+  pod 'YYText', '1.0.7'
+  pod 'FMDB', '2.7.5'
+
+end
+
