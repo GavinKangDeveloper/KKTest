@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnTemp;
 
 @end
 
@@ -20,6 +21,16 @@
     
 
 }
+
+- (IBAction)onButtonClicked:(UIButton *)sender {
+    
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
+
 
 
 @end
