@@ -22,6 +22,22 @@
 
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSTimer * timer = [NSTimer timerWithTimeInterval:1.f repeats:YES block:^(NSTimer * _Nonnull timer) {
+            static int count = 0;
+            [NSThread sleepForTimeInterval:1];
+            //休息一秒钟，模拟耗时操作
+            NSLog(@"%s - %d",__func__,count++);
+        }];
+        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
+        //子线程需要手动开启Runloop
+        [[NSRunLoop currentRunLoop] run];
+    });
+}
+
+
 - (IBAction)onButtonClicked:(UIButton *)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSLog(@"1");
@@ -34,6 +50,8 @@
         [runloop run];
             NSLog(@"3");
         });
+    
+    
     
 }
 
@@ -77,13 +95,6 @@
     CFRunLoopAddObserver(CFRunLoopGetCurrent(), observer ,kCFRunLoopCommonModes);
     CFRelease(observer);
 }
-
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
-
 
 
 @end
