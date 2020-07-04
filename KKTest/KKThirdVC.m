@@ -1,31 +1,22 @@
 //
-//  ViewController.m
+//  KKThirdVC.m
 //  KKTest
 //
-//  Created by ZKKMBP on 2020/6/29.
+//  Created by ZKKMBP on 2020/7/4.
 //  Copyright © 2020 ZKKMBP. All rights reserved.
 //
 
-#import "ViewController.h"
-#import <pthread.h>
-#import "KKSecondVC.h"
 #import "KKThirdVC.h"
 
-@interface ViewController () {
-    // 定义一个并发队列
-    dispatch_queue_t concurrent_queue;
-    
-    // 用户数据中心, 可能多个线程需要数据访问
-    NSMutableDictionary *userCenterDic;
-}
-
-@property (weak, nonatomic) IBOutlet UIButton *btnTemp;
+@interface KKThirdVC ()
 
 @end
 
-@implementation ViewController
-
-
+@implementation KKThirdVC
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 #pragma mark --- sb相关的life circle
 //执行顺序1
@@ -42,14 +33,15 @@
 // 当控制器不是SB时，都走这个方法。(xib或纯代码都会走这个方法)
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     NSLog(@"%@------%s", NSStringFromClass(self.class),__func__);
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
+    {
         //这里仅仅是创建self，还没有创建self.view所以不要在这里设置self.view相关操作
     }
     return self;
 }
 
 //执行顺序2
-// xib或者 SB 加载完成时调用，纯代码不会调用。系统自行调用
+// xib加载完成时调用，纯代码不会调用。系统自行调用
 - (void)awakeFromNib {
     [super awakeFromNib];
      //当awakeFromNib方法被调用时，所有视图的outlet和action已经连接，但还没有被确定。
@@ -76,6 +68,8 @@
     //当self.view被创建后，会立即调用该方法。一般用于完成各种初始化操作
     NSLog(@"%@-----%s",NSStringFromClass(self.class), __func__);
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 //执行顺序5
@@ -139,100 +133,14 @@
     [super didReceiveMemoryWarning];
 }
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//
-//    // 通过宏定义 DISPATCH_QUEUE_CONCURRENT 创建一个并发队列
-//    concurrent_queue = dispatch_queue_create("read_write_queue", DISPATCH_QUEUE_CONCURRENT);
-//    // 创建数据容器
-//    userCenterDic = [NSMutableDictionary dictionary];
-//
-//}
+/*
+#pragma mark - Navigation
 
-- (IBAction)onButtonClicked:(UIButton *)sender {
-    
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
-
-- (id)objectForKey:(NSString *)key {
-    __block id obj;
-    // 同步读取指定数据
-    dispatch_sync(concurrent_queue, ^{
-        
-        NSLog(@"---objectForKey------%@",[NSThread currentThread]);
-        
-        obj = [userCenterDic objectForKey:key];
-    });
-    return obj;
-}
-
-- (void)setObject:(id)obj forKey:(NSString *)key {
-    // 异步栅栏调用设置数据
-    dispatch_barrier_async(concurrent_queue, ^{
-        NSLog(@"---setObject------%@",[NSThread currentThread]);
-        [self->userCenterDic setObject:obj forKey:key];
-    });
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    static NSInteger i = 0;
-    if (i % 2 == 0) {
-        [self.navigationController pushViewController:[KKSecondVC new] animated:YES];
-//        [self presentViewController:[KKSecondVC new] animated:YES completion:nil];
-    } else {
-        [self.navigationController pushViewController:[KKThirdVC new] animated:YES];
-//        [self presentViewController:[KKThirdVC new] animated:YES completion:nil];
-    }
-    i++;
-}
-
-- (void)testBarrierAsync {
-    
-    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    
-    //创建一个并行队列
-    dispatch_queue_t concurrentQueue = dispatch_queue_create("com.gcd.barrier.concurrentQueue", DISPATCH_QUEUE_CONCURRENT);
-    
-    //并行操作
-    void (^blk1)() = ^{
-         NSLog(@"---1------%@",[NSThread currentThread]);
-    };
-    
-    void (^blk2)() = ^{
-        dispatch_semaphore_signal(semaphore);
-        NSLog(@"---2------%@",[NSThread currentThread]);
-    };
-    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    // dosth2 ,只有当dosth1执行完,信号量+1之后,才会执行这里
-    
-    void (^blk3)() = ^{
-        NSLog(@"---3------%@",[NSThread currentThread]);
-    };
-    void (^blk4)() = ^{
-        NSLog(@"---4------%@",[NSThread currentThread]);
-    };
-    void (^blk5)() = ^{
-        NSLog(@"---5------%@",[NSThread currentThread]);
-    };
-    void (^blk6)() = ^{
-        NSLog(@"---6------%@",[NSThread currentThread]);
-    };
-    
-    //栅栏函数执行操作
-    void (^barrierBlk)() = ^{
-        [NSThread sleepForTimeInterval:3.0];
-        NSLog(@"---barrierBlk------%@",[NSThread currentThread]);
-    };
-    
-    //执行所有操作
-    dispatch_async(concurrentQueue, blk1);
-    dispatch_async(concurrentQueue, blk2);
-    dispatch_async(concurrentQueue, blk3);
-    dispatch_barrier_async(concurrentQueue, barrierBlk);
-    dispatch_async(concurrentQueue, blk4);
-    dispatch_async(concurrentQueue, blk5);
-    dispatch_async(concurrentQueue, blk6);
-}
-
-
+*/
 
 @end
