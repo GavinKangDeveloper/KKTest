@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
+@property (weak, nonatomic) IBOutlet UITextView *textV;
+@property (weak, nonatomic) IBOutlet UITextField *textF;
 
 @end
 
@@ -18,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.textV.delegate = self;
     
 
 }
@@ -27,10 +30,13 @@
     
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+   
+}
 
 
 @end
