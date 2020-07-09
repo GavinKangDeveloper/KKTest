@@ -17,6 +17,7 @@
 		785C652924AA1FF600763C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C652824AA1FF600763C46 /* main.m */; };
 		785C653324AA1FF600763C46 /* KKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653224AA1FF600763C46 /* KKTestTests.m */; };
 		785C653E24AA1FF600763C46 /* KKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653D24AA1FF600763C46 /* KKTestUITests.m */; };
+		787CA65524B71E0500C09B11 /* big_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 787CA65424B71E0500C09B11 /* big_img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		785C653924AA1FF600763C46 /* KKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		785C653D24AA1FF600763C46 /* KKTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestUITests.m; sourceTree = "<group>"; };
 		785C653F24AA1FF600763C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787CA65424B71E0500C09B11 /* big_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = big_img.png; sourceTree = "<group>"; };
 		81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				785C651A24AA1FF200763C46 /* SceneDelegate.m */,
 				785C651C24AA1FF200763C46 /* ViewController.h */,
 				785C651D24AA1FF200763C46 /* ViewController.m */,
+				787CA65424B71E0500C09B11 /* big_img.png */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787CA65524B71E0500C09B11 /* big_img.png in Resources */,
 				785C652624AA1FF600763C46 /* LaunchScreen.storyboard in Resources */,
 				785C652324AA1FF600763C46 /* Assets.xcassets in Resources */,
 				785C652124AA1FF200763C46 /* Main.storyboard in Resources */,
