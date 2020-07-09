@@ -36,7 +36,24 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+    [self afterDelay];
+}
+
+#pragma mark - 多线程的应用场景
+///延时操作
+- (void)afterDelay {
+    NSLog(@"-----11---");
+    [NSThread sleepForTimeInterval:1.0];
+    NSLog(@"-----22---");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"-----33---");
+    });
+    [self performSelector:@selector(sleepAction) withObject:nil afterDelay:3.0];
+}
+
+- (void)sleepAction {
+    NSLog(@"-----44---");
+
 }
 
 
