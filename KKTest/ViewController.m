@@ -13,8 +13,12 @@
     dispatch_queue_t _globalQueue;
     dispatch_group_t _group;
 }
+@end
 
+@interface ViewController () <UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
+@property (weak, nonatomic) IBOutlet UITextView *textV;
+@property (weak, nonatomic) IBOutlet UITextField *textF;
 
 @end
 
@@ -22,12 +26,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     _group = dispatch_group_create();
         
     //第一个参数是优先级，第二个参数保留将来使用。传递除零以外的任何值都可能导致空返回值。
     _globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-
+    self.textV.delegate = self;
+    
 }
 
 - (IBAction)onButtonClicked:(UIButton *)sender {
@@ -102,11 +106,11 @@
         //主线程
        NSLog(@"-----------333");
     });
-    
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSLog(@"-----------444");
 
 }
-
 
 
 @end
