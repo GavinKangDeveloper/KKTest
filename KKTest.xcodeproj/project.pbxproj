@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
+		782B701124B9AAA900E5E374 /* KKReverseLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 782B701024B9AAA900E5E374 /* KKReverseLinkedList.m */; };
 		785C651824AA1FF200763C46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C651724AA1FF200763C46 /* AppDelegate.m */; };
 		785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C651A24AA1FF200763C46 /* SceneDelegate.m */; };
 		785C651E24AA1FF200763C46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C651D24AA1FF200763C46 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 		785C652924AA1FF600763C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C652824AA1FF600763C46 /* main.m */; };
 		785C653324AA1FF600763C46 /* KKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653224AA1FF600763C46 /* KKTestTests.m */; };
 		785C653E24AA1FF600763C46 /* KKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653D24AA1FF600763C46 /* KKTestUITests.m */; };
+		787CA65B24B74EDF00C09B11 /* KKBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 787CA65A24B74EDF00C09B11 /* KKBinaryTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
 		73122D74582238632FE39F71 /* Pods-KKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.debug.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.debug.xcconfig"; sourceTree = "<group>"; };
+		782B700F24B9AAA900E5E374 /* KKReverseLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKReverseLinkedList.h; sourceTree = "<group>"; };
+		782B701024B9AAA900E5E374 /* KKReverseLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKReverseLinkedList.m; sourceTree = "<group>"; };
 		785C651324AA1FF200763C46 /* KKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785C651624AA1FF200763C46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		785C651724AA1FF200763C46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 		785C653924AA1FF600763C46 /* KKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		785C653D24AA1FF600763C46 /* KKTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestUITests.m; sourceTree = "<group>"; };
 		785C653F24AA1FF600763C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787CA65924B74EDF00C09B11 /* KKBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKBinaryTree.h; sourceTree = "<group>"; };
+		787CA65A24B74EDF00C09B11 /* KKBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKBinaryTree.m; sourceTree = "<group>"; };
 		81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +131,10 @@
 				785C651A24AA1FF200763C46 /* SceneDelegate.m */,
 				785C651C24AA1FF200763C46 /* ViewController.h */,
 				785C651D24AA1FF200763C46 /* ViewController.m */,
+				787CA65924B74EDF00C09B11 /* KKBinaryTree.h */,
+				787CA65A24B74EDF00C09B11 /* KKBinaryTree.m */,
+				782B700F24B9AAA900E5E374 /* KKReverseLinkedList.h */,
+				782B701024B9AAA900E5E374 /* KKReverseLinkedList.m */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
@@ -318,8 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				785C651E24AA1FF200763C46 /* ViewController.m in Sources */,
+				782B701124B9AAA900E5E374 /* KKReverseLinkedList.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
+				787CA65B24B74EDF00C09B11 /* KKBinaryTree.m in Sources */,
 				785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
