@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "KKSecondVC.h"
 
 @interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
@@ -35,7 +36,12 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-   
+    
+}
+
+- (void)gotoSecondVC {
+    KKSecondVC * VC = [[KKSecondVC  alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 
