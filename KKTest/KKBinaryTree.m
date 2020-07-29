@@ -54,6 +54,26 @@
     }
 }
 
+//排序二叉树，插入数据
++ (BOOL)insterBinaryTree:(NSInteger)value rootModel:(KKBinaryTree *)model {
+    if (!model.value) {
+        model = [[KKBinaryTree alloc] init];
+        model.value = value;
+        model.leftTree = nil;
+        model.rightTree = nil;
+        return YES;
+    }
+    NSInteger midValue = model.value;
+    if (value == midValue) {
+        NSLog(@"有相同内容，插入失败");
+        return NO;
+    } else if (value > midValue) {
+       return [self insterBinaryTree:value rootModel:model.rightTree];
+    } else {
+       return [self insterBinaryTree:value rootModel:model.leftTree];
+    }
+}
+
 - (NSInteger)length {
     return 1 + self.leftTree.length + self.rightTree.length;
 }
