@@ -1,22 +1,36 @@
 PODS:
+  - Aspects (1.4.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - IBProperty/Basis (1.2.3):
+    - Aspects (~> 1.4.1)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
   - YYText (1.0.7)
 
 DEPENDENCIES:
   - FMDB (= 2.7.5)
+  - IBProperty/Basis (= 1.2.3)
+  - SDWebImage (= 4.4.7)
   - YYText (= 1.0.7)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
+    - Aspects
     - FMDB
+    - IBProperty
+    - SDWebImage
     - YYText
 
 SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IBProperty: f33f843e3142b2bf18f8a0b035f1037373f0bac2
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 98c3cea0fe4db17a774ceee602c13d8a552e0a67
+PODFILE CHECKSUM: ee835a56c578c04665e6b7e2ad29cfb1bfbc159d
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
