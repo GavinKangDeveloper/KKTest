@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32917EFB24E2A1AC00635067 /* KKSafeCollection.m */; };
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
 		784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F255624C7DB6C0053A717 /* KKSecondVC.m */; };
 		784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784F255724C7DB6C0053A717 /* KKSecondVC.xib */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32917EFA24E2A1AC00635067 /* KKSafeCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSafeCollection.h; sourceTree = "<group>"; };
+		32917EFB24E2A1AC00635067 /* KKSafeCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSafeCollection.m; sourceTree = "<group>"; };
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
 		73122D74582238632FE39F71 /* Pods-KKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.debug.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.debug.xcconfig"; sourceTree = "<group>"; };
 		784F255524C7DB6C0053A717 /* KKSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSecondVC.h; sourceTree = "<group>"; };
@@ -99,6 +102,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		32917EF924E29F4200635067 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				32917EFA24E2A1AC00635067 /* KKSafeCollection.h */,
+				32917EFB24E2A1AC00635067 /* KKSafeCollection.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		785C650A24AA1FF200763C46 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 		785C651524AA1FF200763C46 /* KKTest */ = {
 			isa = PBXGroup;
 			children = (
+				32917EF924E29F4200635067 /* Tool */,
 				785C651624AA1FF200763C46 /* AppDelegate.h */,
 				785C651724AA1FF200763C46 /* AppDelegate.m */,
 				785C651924AA1FF200763C46 /* SceneDelegate.h */,
@@ -326,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */,
 				785C651E24AA1FF200763C46 /* ViewController.m in Sources */,
 				784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
