@@ -66,21 +66,6 @@ void privateLog(NSString *fmt, ...) {
     }
 }
 
-+ (id)kk_arrayWithObjects:(const id[])objects count:(NSUInteger)count {
-    id validObjects[count];
-    NSUInteger index = 0;
-    for (NSUInteger i = 0; i < count; i++) {
-        if (objects[i]) {
-            validObjects[index] = objects[i];
-            index++;
-        } else {
-            exceptionLog(@"[%@ %@] nil object at index {%zd}", NSStringFromClass([self class]), NSStringFromSelector(_cmd), i);
-        }
-    }
-    
-    return [self kk_arrayWithObjects:validObjects count:index];
-}
-
 @end
 
 
@@ -279,9 +264,6 @@ void privateLog(NSString *fmt, ...) {
         [self exchangeOriginalMethod:[NSArray instanceMethodOfSelector:@selector(objectAtIndexedSubscript:)]
                            newMethod:[NSArray instanceMethodOfSelector:@selector(kk_objectAtIndexedSubscriptI:)]];
         
-        [self exchangeOriginalMethod:[NSArray classMethodOfSelector:@selector(arrayWithObjects:count:)]
-                           newMethod:[NSArray classMethodOfSelector:@selector(kk_arrayWithObjects:count:)]];
-        
         // 可变数组
         [self exchangeOriginalMethod:[NSMutableArray instanceMethodOfSelector:@selector(objectAtIndex:)]
                            newMethod:[NSMutableArray instanceMethodOfSelector:@selector(kk_objectAtIndexM:)]];
@@ -305,7 +287,6 @@ void privateLog(NSString *fmt, ...) {
         
         [self exchangeOriginalMethod:[NSMutableArray instanceMethodOfSelector:@selector(removeObjectsInRange:)]
                            newMethod:[NSMutableArray instanceMethodOfSelector:@selector(kk_removeObjectsInRange:)]];
-        
         
         // 不可变字典
         [self exchangeOriginalMethod:[NSDictionary classMethodOfSelector:@selector(dictionaryWithObjects:forKeys:count:)]
