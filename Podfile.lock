@@ -1,5 +1,6 @@
 PODS:
   - Aspects (1.4.1)
+  - AvoidCrash (2.5.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -11,6 +12,7 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
+  - AvoidCrash
   - FMDB (= 2.7.5)
   - IBProperty/Basis (= 1.2.3)
   - SDWebImage (= 4.4.7)
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Aspects
+    - AvoidCrash
     - FMDB
     - IBProperty
     - SDWebImage
@@ -26,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IBProperty: f33f843e3142b2bf18f8a0b035f1037373f0bac2
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: ee835a56c578c04665e6b7e2ad29cfb1bfbc159d
+PODFILE CHECKSUM: 6c9f23c4607008e241e8c2300ac3c5325845f352
 
 COCOAPODS: 1.9.3

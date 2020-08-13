@@ -8,5 +8,6 @@ target 'KKTest' do
   pod 'FMDB', '2.7.5'
   pod 'SDWebImage','4.4.7'
   pod 'IBProperty/Basis' , '1.2.3'
+  pod 'AvoidCrash' , '~> 2.5.2'
 end
 
