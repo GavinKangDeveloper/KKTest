@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324E003D2509C17500BAEB45 /* KKThridVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E003B2509C17500BAEB45 /* KKThridVC.m */; };
+		324E003E2509C17500BAEB45 /* KKThridVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324E003C2509C17500BAEB45 /* KKThridVC.xib */; };
+		324E00462509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E00452509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32917EFB24E2A1AC00635067 /* KKSafeCollection.m */; };
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
 		784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F255624C7DB6C0053A717 /* KKSecondVC.m */; };
@@ -40,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324E003A2509C17500BAEB45 /* KKThridVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKThridVC.h; sourceTree = "<group>"; };
+		324E003B2509C17500BAEB45 /* KKThridVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKThridVC.m; sourceTree = "<group>"; };
+		324E003C2509C17500BAEB45 /* KKThridVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKThridVC.xib; sourceTree = "<group>"; };
+		324E00442509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		324E00452509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		32917EFA24E2A1AC00635067 /* KKSafeCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSafeCollection.h; sourceTree = "<group>"; };
 		32917EFB24E2A1AC00635067 /* KKSafeCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSafeCollection.m; sourceTree = "<group>"; };
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +110,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		324E00432509D18200BAEB45 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				324E00442509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.h */,
+				324E00452509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 		32917EF924E29F4200635067 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +163,10 @@
 				784F255524C7DB6C0053A717 /* KKSecondVC.h */,
 				784F255624C7DB6C0053A717 /* KKSecondVC.m */,
 				784F255724C7DB6C0053A717 /* KKSecondVC.xib */,
+				324E003A2509C17500BAEB45 /* KKThridVC.h */,
+				324E003B2509C17500BAEB45 /* KKThridVC.m */,
+				324E003C2509C17500BAEB45 /* KKThridVC.xib */,
+				324E00432509D18200BAEB45 /* FDFullscreenPopGesture */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
@@ -287,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785C652624AA1FF600763C46 /* LaunchScreen.storyboard in Resources */,
+				324E003E2509C17500BAEB45 /* KKThridVC.xib in Resources */,
 				785C652324AA1FF600763C46 /* Assets.xcassets in Resources */,
 				784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */,
 				785C652124AA1FF200763C46 /* Main.storyboard in Resources */,
@@ -341,7 +363,9 @@
 			files = (
 				32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */,
 				785C651E24AA1FF200763C46 /* ViewController.m in Sources */,
+				324E00462509D18200BAEB45 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */,
+				324E003D2509C17500BAEB45 /* KKThridVC.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
 				785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */,
