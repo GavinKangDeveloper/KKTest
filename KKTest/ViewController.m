@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "KKSecondVC.h"
+#import "KKCommonManager.h"
+
 
 @interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
@@ -23,6 +25,40 @@
 
     self.textV.delegate = self;
  
+    KKCommonManager *managerShared = [KKCommonManager sharedManager];
+    
+    KKCommonManager *managerAlloc = [[KKCommonManager alloc] init];
+    
+    KKCommonManager *managerNew = [KKCommonManager new];
+    
+    KKCommonManager *managerCopy = [managerShared copy];
+    
+    KKCommonManager *managerMutableCopy = [managerShared mutableCopy];
+    
+    NSLog(@"-----managerShared-----%@",managerShared);
+    NSLog(@"-----managerAlloc-----%@",managerAlloc);
+    NSLog(@"-----managerNew-----%@",managerNew);
+    NSLog(@"-----managerCopy-----%@",managerCopy);
+    NSLog(@"-----managerMutableCopy-----%@",managerMutableCopy);
+    
+    
+    [managerShared invalidate];
+    
+    KKCommonManager *managerShared2 = [KKCommonManager sharedManager];
+    
+    KKCommonManager *managerAlloc2 = [[KKCommonManager alloc] init];
+    
+    KKCommonManager *managerNew2 = [KKCommonManager new];
+    
+    KKCommonManager *managerCopy2 = [managerShared2 copy];
+    
+    KKCommonManager *managerMutableCopy2 = [managerShared2 mutableCopy];
+    
+    NSLog(@"-----managerShared2-----%@",managerShared2);
+    NSLog(@"-----managerAlloc2-----%@",managerAlloc2);
+    NSLog(@"-----managerNew2-----%@",managerNew2);
+    NSLog(@"-----managerCopy2-----%@",managerCopy2);
+    NSLog(@"-----managerMutableCopy2-----%@",managerMutableCopy2);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

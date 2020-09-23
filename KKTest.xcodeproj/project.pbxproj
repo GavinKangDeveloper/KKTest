@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328D6869251AE772006E722D /* KKCommonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 328D6868251AE772006E722D /* KKCommonManager.m */; };
 		32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32917EFB24E2A1AC00635067 /* KKSafeCollection.m */; };
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
 		784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F255624C7DB6C0053A717 /* KKSecondVC.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		328D6867251AE772006E722D /* KKCommonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCommonManager.h; sourceTree = "<group>"; };
+		328D6868251AE772006E722D /* KKCommonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCommonManager.m; sourceTree = "<group>"; };
 		32917EFA24E2A1AC00635067 /* KKSafeCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSafeCollection.h; sourceTree = "<group>"; };
 		32917EFB24E2A1AC00635067 /* KKSafeCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSafeCollection.m; sourceTree = "<group>"; };
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				784F255524C7DB6C0053A717 /* KKSecondVC.h */,
 				784F255624C7DB6C0053A717 /* KKSecondVC.m */,
 				784F255724C7DB6C0053A717 /* KKSecondVC.xib */,
+				328D6867251AE772006E722D /* KKCommonManager.h */,
+				328D6868251AE772006E722D /* KKCommonManager.m */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
@@ -345,6 +350,7 @@
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
 				785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */,
+				328D6869251AE772006E722D /* KKCommonManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
