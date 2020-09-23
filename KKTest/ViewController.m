@@ -30,7 +30,7 @@
     CGFloat SCREEN_WIDTH = self.view.frame.size.width;
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH-40.0)/3, (SCREEN_WIDTH-40.0)/3);
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50.0, 414, 400) collectionViewLayout:flowLayout];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 50.0, 414, 600) collectionViewLayout:flowLayout];
     collectionView.dataSource = self;
     collectionView.delegate = self;
     collectionView.backgroundColor = [UIColor whiteColor];
@@ -42,7 +42,7 @@
     [collectionView addGestureRecognizer:longPress];
     
     self.dataArr = [[NSMutableArray alloc] init];
-    for (NSInteger index = 0; index < 50; index ++) {
+    for (NSInteger index = 0; index < 3; index ++) {
         CGFloat hue = (arc4random()%256/256.0); //0.0 到 1.0
         CGFloat saturation = (arc4random()%128/256.0)+0.5; //0.5 到 1.0
         CGFloat brightness = (arc4random()%128/256.0)+0.5; //0.5 到 1.0
@@ -53,64 +53,63 @@
 }
 
 #pragma mark - UICollectionViewDataSource
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 2;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
   return self.dataArr.count;
 }
   
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
   UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"uicollectionviewcell" forIndexPath:indexPath];
   cell.backgroundColor = self.dataArr[indexPath.row];
   return cell;
 }
 
 #pragma mark - 长按手势
-- (void)handlelongGesture:(UILongPressGestureRecognizer *)longPress
-{
-  [self iOS9_Action:longPress];
+- (void)handlelongGesture:(UILongPressGestureRecognizer *)longPress {
+    switch (longPress.state) {
+      case UIGestureRecognizerStateBegan: { //手势开始
+          self.moveIndexPath = [self.collectionView indexPathForItemAtPoint:[longPress locationInView:self.collectionView]];
+          if (self.moveIndexPath.section == 1) {
+          break;
+        }
+        UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:self.moveIndexPath];
+        [self.view bringSubviewToFront:cell];
+        [self.collectionView beginInteractiveMovementForItemAtIndexPath:self.moveIndexPath];
+      }
+        break;
+      case UIGestureRecognizerStateChanged: { // 手势改变
+        [self.collectionView updateInteractiveMovementTargetPosition:[longPress locationInView:self.collectionView]];
+      }
+        break;
+      case UIGestureRecognizerStateEnded: { // 手势结束
+        [self.collectionView endInteractiveMovement];
+      }
+        break;
+      default: //手势其他状态
+        [self.collectionView cancelInteractiveMovement];
+        break;
+    }
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath {
   // 返回YES允许row移动
   return YES;
 }
   
 - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
-    if (destinationIndexPath.item > 10) {
-        NSLog(@"---只能移动在 item 为 10 以内");
+    if (destinationIndexPath.item == 1 || destinationIndexPath.section == 1) {
+        NSLog(@"---只能移动在----- 以内");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+        });
         return;
     }
   id color = self.dataArr[sourceIndexPath.row];
   [self.dataArr removeObject:color];
   [self.dataArr insertObject:color atIndex:destinationIndexPath.row];
-}
-  
-- (void)iOS9_Action:(UILongPressGestureRecognizer *)longPress {
-  switch (longPress.state) {
-    case UIGestureRecognizerStateBegan: { //手势开始
-        self.moveIndexPath = [self.collectionView indexPathForItemAtPoint:[longPress locationInView:self.collectionView]];
-        if (self.moveIndexPath.item < 7) {
-        break;
-      }
-      UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:self.moveIndexPath];
-      [self.view bringSubviewToFront:cell];
-      [self.collectionView beginInteractiveMovementForItemAtIndexPath:self.moveIndexPath];
-    }
-      break;
-    case UIGestureRecognizerStateChanged: { // 手势改变
-      [self.collectionView updateInteractiveMovementTargetPosition:[longPress locationInView:self.collectionView]];
-    }
-      break;
-    case UIGestureRecognizerStateEnded: { // 手势结束
-      [self.collectionView endInteractiveMovement];
-    }
-      break;
-    default: //手势其他状态
-      [self.collectionView cancelInteractiveMovement];
-      break;
-  }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
