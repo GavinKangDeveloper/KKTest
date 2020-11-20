@@ -1,0 +1,1 @@
+../../../KKLib/KKLib/Classes/Categories/NSString+KKTools.h

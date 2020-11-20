@@ -1,40 +1,73 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - Aspects (1.4.1)
-  - AvoidCrash (2.5.2)
+  - FMCategory (0.0.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - IBProperty/Basis (1.2.3):
     - Aspects (~> 1.4.1)
+  - KKLib (0.0.3):
+    - KKLib/Categories (= 0.0.3)
+    - KKLib/Configs (= 0.0.3)
+    - KKLib/Tools (= 0.0.3)
+  - KKLib/Categories (0.0.3)
+  - KKLib/Configs (0.0.3)
+  - KKLib/Tools (0.0.3)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
+  - SVProgressHUD (2.2.5)
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - AvoidCrash
+  - AFNetworking (= 4.0.1)
+  - FMCategory
   - FMDB (= 2.7.5)
   - IBProperty/Basis (= 1.2.3)
+  - KKLib (= 0.0.3)
   - SDWebImage (= 4.4.7)
+  - SVProgressHUD
   - YYText (= 1.0.7)
 
 SPEC REPOS:
-  trunk:
+  http://192.168.1.189/FuMiiOS/FuMiPodSpec.git:
+    - FMCategory
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
     - Aspects
-    - AvoidCrash
     - FMDB
     - IBProperty
+    - KKLib
     - SDWebImage
+    - SVProgressHUD
     - YYText
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  FMCategory: ae245e1e26f485913aea9190f3eabeee2d6465d3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IBProperty: f33f843e3142b2bf18f8a0b035f1037373f0bac2
+  KKLib: f98022bd15b90f109ecdae9fc355453ee13fe7b6
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 6c9f23c4607008e241e8c2300ac3c5325845f352
+PODFILE CHECKSUM: f6cd8d6811173ed9e2cb7223ba4a003bbfd878a8
 
 COCOAPODS: 1.9.3

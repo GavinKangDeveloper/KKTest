@@ -7,6 +7,7 @@
 //
 
 #import "KKSecondVC.h"
+#import <NSTimer+KKWeakTimer.h>
 
 @interface KKSecondVC ()
 
@@ -14,10 +15,30 @@
 
 @implementation KKSecondVC
 
+- (void)dealloc {
+    
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSLog(@"--KKSecondVC-------viewWillAppear--");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    NSLog(@"--KKSecondVC------viewWillDisappear---");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+  
 }
+
+
 
 /*
 #pragma mark - Navigation

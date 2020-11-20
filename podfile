@@ -1,6 +1,7 @@
 platform :ios, "9.0"
 
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://192.168.1.189/FuMiiOS/FuMiPodSpec.git'
 
 target 'KKTest' do
 
@@ -8,6 +9,11 @@ target 'KKTest' do
   pod 'FMDB', '2.7.5'
   pod 'SDWebImage','4.4.7'
   pod 'IBProperty/Basis' , '1.2.3'
-  pod 'AvoidCrash' , '~> 2.5.2'
+  #  pod 'AvoidCrash' , '2.5.2'
+  pod 'KKLib' , '0.0.3'
+  pod 'AFNetworking' , '4.0.1'
+  pod 'SVProgressHUD', '2.2.5'
+  pod 'FMCategory'
+
 end
 

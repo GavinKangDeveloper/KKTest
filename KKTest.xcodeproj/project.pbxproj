@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321F39C1254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */; };
+		3283BAC22566781D001C646F /* KKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC12566781D001C646F /* KKHTTPSessionManager.m */; };
+		3283BAC525667D72001C646F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC425667D72001C646F /* KKUtilityNotice.m */; };
 		32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32917EFB24E2A1AC00635067 /* KKSafeCollection.m */; };
+		32C096D6254190E400872083 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C096D5254190E400872083 /* NSDate+Extension.m */; };
+		32ED0105254BE6B9001E1A2E /* KKTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ED0104254BE6B9001E1A2E /* KKTestCell.m */; };
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
 		784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F255624C7DB6C0053A717 /* KKSecondVC.m */; };
 		784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784F255724C7DB6C0053A717 /* KKSecondVC.xib */; };
@@ -40,8 +45,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321F39BF254BE5C80027F187 /* UITableViewCell+FMLoadContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FMLoadContentView.h"; sourceTree = "<group>"; };
+		321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FMLoadContentView.m"; sourceTree = "<group>"; };
+		3283BAC02566781D001C646F /* KKHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHTTPSessionManager.h; sourceTree = "<group>"; };
+		3283BAC12566781D001C646F /* KKHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKHTTPSessionManager.m; sourceTree = "<group>"; };
+		3283BAC325667D71001C646F /* KKUtilityNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUtilityNotice.h; sourceTree = "<group>"; };
+		3283BAC425667D72001C646F /* KKUtilityNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
 		32917EFA24E2A1AC00635067 /* KKSafeCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSafeCollection.h; sourceTree = "<group>"; };
 		32917EFB24E2A1AC00635067 /* KKSafeCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSafeCollection.m; sourceTree = "<group>"; };
+		32C096D4254190E400872083 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		32C096D5254190E400872083 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		32ED0103254BE6B9001E1A2E /* KKTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTestCell.h; sourceTree = "<group>"; };
+		32ED0104254BE6B9001E1A2E /* KKTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestCell.m; sourceTree = "<group>"; };
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
 		73122D74582238632FE39F71 /* Pods-KKTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.debug.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.debug.xcconfig"; sourceTree = "<group>"; };
 		784F255524C7DB6C0053A717 /* KKSecondVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSecondVC.h; sourceTree = "<group>"; };
@@ -111,6 +126,17 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		32E3BEB3256522B00013602A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3283BAC02566781D001C646F /* KKHTTPSessionManager.h */,
+				3283BAC12566781D001C646F /* KKHTTPSessionManager.m */,
+				3283BAC325667D71001C646F /* KKUtilityNotice.h */,
+				3283BAC425667D72001C646F /* KKUtilityNotice.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		785C650A24AA1FF200763C46 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +173,13 @@
 				784F255624C7DB6C0053A717 /* KKSecondVC.m */,
 				784F255724C7DB6C0053A717 /* KKSecondVC.xib */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
+				32C096D4254190E400872083 /* NSDate+Extension.h */,
+				32C096D5254190E400872083 /* NSDate+Extension.m */,
+				321F39BF254BE5C80027F187 /* UITableViewCell+FMLoadContentView.h */,
+				321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */,
+				32ED0103254BE6B9001E1A2E /* KKTestCell.h */,
+				32ED0104254BE6B9001E1A2E /* KKTestCell.m */,
+				32E3BEB3256522B00013602A /* Network */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
 				785C652724AA1FF600763C46 /* Info.plist */,
@@ -193,6 +226,7 @@
 				785C650F24AA1FF200763C46 /* Sources */,
 				785C651024AA1FF200763C46 /* Frameworks */,
 				785C651124AA1FF200763C46 /* Resources */,
+				809129D9BC60C9AB07EBC234 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,6 +344,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		809129D9BC60C9AB07EBC234 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKTest/Pods-KKTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KKTest/Pods-KKTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KKTest/Pods-KKTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D66F9BC88EB3D925AC3687A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,7 +392,12 @@
 			files = (
 				32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */,
 				785C651E24AA1FF200763C46 /* ViewController.m in Sources */,
+				3283BAC22566781D001C646F /* KKHTTPSessionManager.m in Sources */,
+				3283BAC525667D72001C646F /* KKUtilityNotice.m in Sources */,
 				784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */,
+				32ED0105254BE6B9001E1A2E /* KKTestCell.m in Sources */,
+				321F39C1254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m in Sources */,
+				32C096D6254190E400872083 /* NSDate+Extension.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
 				785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */,
