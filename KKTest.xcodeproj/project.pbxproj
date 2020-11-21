@@ -8,10 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		321F39C1254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */; };
-		3283BAC22566781D001C646F /* KKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC12566781D001C646F /* KKHTTPSessionManager.m */; };
-		3283BAC525667D72001C646F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC425667D72001C646F /* KKUtilityNotice.m */; };
-		32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 32917EFB24E2A1AC00635067 /* KKSafeCollection.m */; };
+		3283BACB2567C561001C646F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC72567C561001C646F /* KKUtilityNotice.m */; };
+		3283BACC2567C561001C646F /* KKHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3283BAC82567C561001C646F /* KKHTTPSessionManager.m */; };
 		32C096D6254190E400872083 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C096D5254190E400872083 /* NSDate+Extension.m */; };
+		32D92ABE2567C50800987883 /* UIImage+WaterMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92A822567C50700987883 /* UIImage+WaterMake.m */; };
+		32D92AC12567C50800987883 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92A892567C50700987883 /* UIView+Animation.m */; };
+		32D92AC52567C50800987883 /* KKCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92A982567C50700987883 /* KKCollectionView.m */; };
+		32D92AC62567C50800987883 /* KKLaunchImageAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92A992567C50700987883 /* KKLaunchImageAdView.m */; };
+		32D92AC72567C50800987883 /* KKTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92A9A2567C50700987883 /* KKTableView.m */; };
+		32D92AC82567C50800987883 /* KKLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA12567C50800987883 /* KKLocationViewController.m */; };
+		32D92AC92567C50800987883 /* UIViewController+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA22567C50800987883 /* UIViewController+log.m */; };
+		32D92ACA2567C50800987883 /* KKBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA32567C50800987883 /* KKBaseTabBarController.m */; };
+		32D92ACB2567C50800987883 /* KKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA42567C50800987883 /* KKBaseViewController.m */; };
+		32D92ACC2567C50800987883 /* KKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA52567C50800987883 /* KKBaseNavigationController.m */; };
+		32D92ACF2567C50800987883 /* KKCommonNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AA92567C50800987883 /* KKCommonNotice.m */; };
+		32D92AD02567C50800987883 /* YSControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AAB2567C50800987883 /* YSControlManager.m */; };
+		32D92AD12567C50800987883 /* KKCommonMethodManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AAF2567C50800987883 /* KKCommonMethodManager.m */; };
+		32D92AD22567C50800987883 /* KKDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AB22567C50800987883 /* KKDateManager.m */; };
+		32D92AD32567C50800987883 /* KKLoginManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AB32567C50800987883 /* KKLoginManger.m */; };
+		32D92AD42567C50800987883 /* KKBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AB72567C50800987883 /* KKBaseService.m */; };
+		32D92AD52567C50800987883 /* KKServiceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92AB82567C50800987883 /* KKServiceTool.m */; };
+		32D92AD62567C50800987883 /* KKTempFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92ABC2567C50800987883 /* KKTempFirstViewController.m */; };
+		32D92AD72567C50800987883 /* KKTempSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D92ABD2567C50800987883 /* KKTempSecondViewController.m */; };
 		32ED0105254BE6B9001E1A2E /* KKTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32ED0104254BE6B9001E1A2E /* KKTestCell.m */; };
 		3B4B8FFCB0402A4DF86D8ED0 /* libPods-KKTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */; };
 		784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784F255624C7DB6C0053A717 /* KKSecondVC.m */; };
@@ -47,14 +65,50 @@
 /* Begin PBXFileReference section */
 		321F39BF254BE5C80027F187 /* UITableViewCell+FMLoadContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FMLoadContentView.h"; sourceTree = "<group>"; };
 		321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FMLoadContentView.m"; sourceTree = "<group>"; };
-		3283BAC02566781D001C646F /* KKHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHTTPSessionManager.h; sourceTree = "<group>"; };
-		3283BAC12566781D001C646F /* KKHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKHTTPSessionManager.m; sourceTree = "<group>"; };
-		3283BAC325667D71001C646F /* KKUtilityNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKUtilityNotice.h; sourceTree = "<group>"; };
-		3283BAC425667D72001C646F /* KKUtilityNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
-		32917EFA24E2A1AC00635067 /* KKSafeCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSafeCollection.h; sourceTree = "<group>"; };
-		32917EFB24E2A1AC00635067 /* KKSafeCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSafeCollection.m; sourceTree = "<group>"; };
+		3283BAC72567C561001C646F /* KKUtilityNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
+		3283BAC82567C561001C646F /* KKHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHTTPSessionManager.m; sourceTree = "<group>"; };
+		3283BAC92567C561001C646F /* KKHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHTTPSessionManager.h; sourceTree = "<group>"; };
+		3283BACA2567C561001C646F /* KKUtilityNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUtilityNotice.h; sourceTree = "<group>"; };
 		32C096D4254190E400872083 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		32C096D5254190E400872083 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		32D92A822567C50700987883 /* UIImage+WaterMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WaterMake.m"; sourceTree = "<group>"; };
+		32D92A832567C50700987883 /* UIImage+WaterMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WaterMake.h"; sourceTree = "<group>"; };
+		32D92A892567C50700987883 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		32D92A8B2567C50700987883 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		32D92A952567C50700987883 /* KKCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCollectionView.h; sourceTree = "<group>"; };
+		32D92A962567C50700987883 /* KKLaunchImageAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLaunchImageAdView.h; sourceTree = "<group>"; };
+		32D92A972567C50700987883 /* KKTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTableView.h; sourceTree = "<group>"; };
+		32D92A982567C50700987883 /* KKCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCollectionView.m; sourceTree = "<group>"; };
+		32D92A992567C50700987883 /* KKLaunchImageAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLaunchImageAdView.m; sourceTree = "<group>"; };
+		32D92A9A2567C50700987883 /* KKTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTableView.m; sourceTree = "<group>"; };
+		32D92A9C2567C50700987883 /* UIViewController+log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+log.h"; sourceTree = "<group>"; };
+		32D92A9D2567C50800987883 /* KKLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLocationViewController.h; sourceTree = "<group>"; };
+		32D92A9E2567C50800987883 /* KKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBaseViewController.h; sourceTree = "<group>"; };
+		32D92A9F2567C50800987883 /* KKBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBaseTabBarController.h; sourceTree = "<group>"; };
+		32D92AA02567C50800987883 /* KKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBaseNavigationController.h; sourceTree = "<group>"; };
+		32D92AA12567C50800987883 /* KKLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLocationViewController.m; sourceTree = "<group>"; };
+		32D92AA22567C50800987883 /* UIViewController+log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+log.m"; sourceTree = "<group>"; };
+		32D92AA32567C50800987883 /* KKBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBaseTabBarController.m; sourceTree = "<group>"; };
+		32D92AA42567C50800987883 /* KKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBaseViewController.m; sourceTree = "<group>"; };
+		32D92AA52567C50800987883 /* KKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBaseNavigationController.m; sourceTree = "<group>"; };
+		32D92AA92567C50800987883 /* KKCommonNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommonNotice.m; sourceTree = "<group>"; };
+		32D92AAA2567C50800987883 /* KKCommonMethodManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommonMethodManager.h; sourceTree = "<group>"; };
+		32D92AAB2567C50800987883 /* YSControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSControlManager.m; sourceTree = "<group>"; };
+		32D92AAC2567C50800987883 /* KKDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDateManager.h; sourceTree = "<group>"; };
+		32D92AAD2567C50800987883 /* KKLoginManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLoginManger.h; sourceTree = "<group>"; };
+		32D92AAF2567C50800987883 /* KKCommonMethodManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCommonMethodManager.m; sourceTree = "<group>"; };
+		32D92AB02567C50800987883 /* KKCommonNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCommonNotice.h; sourceTree = "<group>"; };
+		32D92AB12567C50800987883 /* YSControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSControlManager.h; sourceTree = "<group>"; };
+		32D92AB22567C50800987883 /* KKDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDateManager.m; sourceTree = "<group>"; };
+		32D92AB32567C50800987883 /* KKLoginManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLoginManger.m; sourceTree = "<group>"; };
+		32D92AB52567C50800987883 /* KKBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKBaseService.h; sourceTree = "<group>"; };
+		32D92AB62567C50800987883 /* KKServiceTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKServiceTool.h; sourceTree = "<group>"; };
+		32D92AB72567C50800987883 /* KKBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKBaseService.m; sourceTree = "<group>"; };
+		32D92AB82567C50800987883 /* KKServiceTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKServiceTool.m; sourceTree = "<group>"; };
+		32D92ABA2567C50800987883 /* KKTempFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTempFirstViewController.h; sourceTree = "<group>"; };
+		32D92ABB2567C50800987883 /* KKTempSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTempSecondViewController.h; sourceTree = "<group>"; };
+		32D92ABC2567C50800987883 /* KKTempFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTempFirstViewController.m; sourceTree = "<group>"; };
+		32D92ABD2567C50800987883 /* KKTempSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTempSecondViewController.m; sourceTree = "<group>"; };
 		32ED0103254BE6B9001E1A2E /* KKTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTestCell.h; sourceTree = "<group>"; };
 		32ED0104254BE6B9001E1A2E /* KKTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestCell.m; sourceTree = "<group>"; };
 		3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKTest.release.xcconfig"; path = "Target Support Files/Pods-KKTest/Pods-KKTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,24 +171,133 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		32917EF924E29F4200635067 /* Tool */ = {
+		3283BAC62567C561001C646F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				32917EFA24E2A1AC00635067 /* KKSafeCollection.h */,
-				32917EFB24E2A1AC00635067 /* KKSafeCollection.m */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		32E3BEB3256522B00013602A /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				3283BAC02566781D001C646F /* KKHTTPSessionManager.h */,
-				3283BAC12566781D001C646F /* KKHTTPSessionManager.m */,
-				3283BAC325667D71001C646F /* KKUtilityNotice.h */,
-				3283BAC425667D72001C646F /* KKUtilityNotice.m */,
+				3283BAC92567C561001C646F /* KKHTTPSessionManager.h */,
+				3283BAC82567C561001C646F /* KKHTTPSessionManager.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3283BACD2567C573001C646F /* UtilityNotice */ = {
+			isa = PBXGroup;
+			children = (
+				3283BACA2567C561001C646F /* KKUtilityNotice.h */,
+				3283BAC72567C561001C646F /* KKUtilityNotice.m */,
+			);
+			path = UtilityNotice;
+			sourceTree = "<group>";
+		};
+		32D92A7F2567C50700987883 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3283BACD2567C573001C646F /* UtilityNotice */,
+				3283BAC62567C561001C646F /* Network */,
+				32D92A802567C50700987883 /* Category */,
+				32D92A942567C50700987883 /* UIView */,
+				32D92A9B2567C50700987883 /* UIViewController */,
+				32D92AA72567C50800987883 /* Manage */,
+				32D92AB42567C50800987883 /* Service */,
+				32D92AB92567C50800987883 /* TempViewController */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		32D92A802567C50700987883 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				32D92A812567C50700987883 /* UIImage */,
+				32D92A872567C50700987883 /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		32D92A812567C50700987883 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				32D92A822567C50700987883 /* UIImage+WaterMake.m */,
+				32D92A832567C50700987883 /* UIImage+WaterMake.h */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		32D92A872567C50700987883 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				32D92A8B2567C50700987883 /* UIView+Animation.h */,
+				32D92A892567C50700987883 /* UIView+Animation.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		32D92A942567C50700987883 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				32D92A952567C50700987883 /* KKCollectionView.h */,
+				32D92A962567C50700987883 /* KKLaunchImageAdView.h */,
+				32D92A972567C50700987883 /* KKTableView.h */,
+				32D92A9A2567C50700987883 /* KKTableView.m */,
+				32D92A982567C50700987883 /* KKCollectionView.m */,
+				32D92A992567C50700987883 /* KKLaunchImageAdView.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		32D92A9B2567C50700987883 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32D92A9C2567C50700987883 /* UIViewController+log.h */,
+				32D92AA22567C50800987883 /* UIViewController+log.m */,
+				32D92A9E2567C50800987883 /* KKBaseViewController.h */,
+				32D92AA42567C50800987883 /* KKBaseViewController.m */,
+				32D92A9D2567C50800987883 /* KKLocationViewController.h */,
+				32D92AA12567C50800987883 /* KKLocationViewController.m */,
+				32D92A9F2567C50800987883 /* KKBaseTabBarController.h */,
+				32D92AA32567C50800987883 /* KKBaseTabBarController.m */,
+				32D92AA02567C50800987883 /* KKBaseNavigationController.h */,
+				32D92AA52567C50800987883 /* KKBaseNavigationController.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		32D92AA72567C50800987883 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				32D92AAD2567C50800987883 /* KKLoginManger.h */,
+				32D92AB32567C50800987883 /* KKLoginManger.m */,
+				32D92AAA2567C50800987883 /* KKCommonMethodManager.h */,
+				32D92AAF2567C50800987883 /* KKCommonMethodManager.m */,
+				32D92AB02567C50800987883 /* KKCommonNotice.h */,
+				32D92AA92567C50800987883 /* KKCommonNotice.m */,
+				32D92AB12567C50800987883 /* YSControlManager.h */,
+				32D92AAB2567C50800987883 /* YSControlManager.m */,
+				32D92AAC2567C50800987883 /* KKDateManager.h */,
+				32D92AB22567C50800987883 /* KKDateManager.m */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		32D92AB42567C50800987883 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				32D92AB52567C50800987883 /* KKBaseService.h */,
+				32D92AB62567C50800987883 /* KKServiceTool.h */,
+				32D92AB72567C50800987883 /* KKBaseService.m */,
+				32D92AB82567C50800987883 /* KKServiceTool.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		32D92AB92567C50800987883 /* TempViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32D92ABA2567C50800987883 /* KKTempFirstViewController.h */,
+				32D92ABB2567C50800987883 /* KKTempSecondViewController.h */,
+				32D92ABC2567C50800987883 /* KKTempFirstViewController.m */,
+				32D92ABD2567C50800987883 /* KKTempSecondViewController.m */,
+			);
+			path = TempViewController;
 			sourceTree = "<group>";
 		};
 		785C650A24AA1FF200763C46 = {
@@ -162,7 +325,6 @@
 		785C651524AA1FF200763C46 /* KKTest */ = {
 			isa = PBXGroup;
 			children = (
-				32917EF924E29F4200635067 /* Tool */,
 				785C651624AA1FF200763C46 /* AppDelegate.h */,
 				785C651724AA1FF200763C46 /* AppDelegate.m */,
 				785C651924AA1FF200763C46 /* SceneDelegate.h */,
@@ -179,7 +341,7 @@
 				321F39C0254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m */,
 				32ED0103254BE6B9001E1A2E /* KKTestCell.h */,
 				32ED0104254BE6B9001E1A2E /* KKTestCell.m */,
-				32E3BEB3256522B00013602A /* Network */,
+				32D92A7F2567C50700987883 /* Common */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
 				785C652724AA1FF600763C46 /* Info.plist */,
@@ -390,16 +552,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32917EFC24E2A1AC00635067 /* KKSafeCollection.m in Sources */,
+				32D92AC12567C50800987883 /* UIView+Animation.m in Sources */,
+				32D92AD52567C50800987883 /* KKServiceTool.m in Sources */,
 				785C651E24AA1FF200763C46 /* ViewController.m in Sources */,
-				3283BAC22566781D001C646F /* KKHTTPSessionManager.m in Sources */,
-				3283BAC525667D72001C646F /* KKUtilityNotice.m in Sources */,
+				32D92AC62567C50800987883 /* KKLaunchImageAdView.m in Sources */,
+				32D92AD02567C50800987883 /* YSControlManager.m in Sources */,
+				32D92AD32567C50800987883 /* KKLoginManger.m in Sources */,
+				32D92AD62567C50800987883 /* KKTempFirstViewController.m in Sources */,
+				32D92ACB2567C50800987883 /* KKBaseViewController.m in Sources */,
+				32D92ABE2567C50800987883 /* UIImage+WaterMake.m in Sources */,
 				784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */,
+				32D92AC52567C50800987883 /* KKCollectionView.m in Sources */,
 				32ED0105254BE6B9001E1A2E /* KKTestCell.m in Sources */,
 				321F39C1254BE5C80027F187 /* UITableViewCell+FMLoadContentView.m in Sources */,
 				32C096D6254190E400872083 /* NSDate+Extension.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
+				32D92AC82567C50800987883 /* KKLocationViewController.m in Sources */,
+				32D92AC72567C50800987883 /* KKTableView.m in Sources */,
+				32D92AD42567C50800987883 /* KKBaseService.m in Sources */,
+				32D92ACC2567C50800987883 /* KKBaseNavigationController.m in Sources */,
+				3283BACC2567C561001C646F /* KKHTTPSessionManager.m in Sources */,
+				32D92AD72567C50800987883 /* KKTempSecondViewController.m in Sources */,
+				32D92AD22567C50800987883 /* KKDateManager.m in Sources */,
+				32D92ACA2567C50800987883 /* KKBaseTabBarController.m in Sources */,
+				3283BACB2567C561001C646F /* KKUtilityNotice.m in Sources */,
+				32D92AD12567C50800987883 /* KKCommonMethodManager.m in Sources */,
+				32D92ACF2567C50800987883 /* KKCommonNotice.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
+				32D92AC92567C50800987883 /* UIViewController+log.m in Sources */,
 				785C651B24AA1FF200763C46 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
