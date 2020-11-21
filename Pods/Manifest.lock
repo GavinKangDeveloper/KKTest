@@ -21,13 +21,13 @@ PODS:
   - FMDB/standard (2.7.5)
   - IBProperty/Basis (1.2.3):
     - Aspects (~> 1.4.1)
-  - KKLib (0.0.3):
-    - KKLib/Categories (= 0.0.3)
-    - KKLib/Configs (= 0.0.3)
-    - KKLib/Tools (= 0.0.3)
-  - KKLib/Categories (0.0.3)
-  - KKLib/Configs (0.0.3)
-  - KKLib/Tools (0.0.3)
+  - KKLib (0.1.1):
+    - KKLib/Categories (= 0.1.1)
+    - KKLib/Configs (= 0.1.1)
+    - KKLib/Tools (= 0.1.1)
+  - KKLib/Categories (0.1.1)
+  - KKLib/Configs (0.1.1)
+  - KKLib/Tools (0.1.1)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
@@ -36,12 +36,12 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
-  - FMCategory
+  - FMCategory (= 0.0.2)
   - FMDB (= 2.7.5)
   - IBProperty/Basis (= 1.2.3)
-  - KKLib (= 0.0.3)
+  - KKLib (= 0.1.1)
   - SDWebImage (= 4.4.7)
-  - SVProgressHUD
+  - SVProgressHUD (= 2.2.5)
   - YYText (= 1.0.7)
 
 SPEC REPOS:
@@ -63,11 +63,11 @@ SPEC CHECKSUMS:
   FMCategory: ae245e1e26f485913aea9190f3eabeee2d6465d3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IBProperty: f33f843e3142b2bf18f8a0b035f1037373f0bac2
-  KKLib: f98022bd15b90f109ecdae9fc355453ee13fe7b6
+  KKLib: f1e8f8c4bf0fbd93f1b6eb12c2e3b63739315d9b
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: f6cd8d6811173ed9e2cb7223ba4a003bbfd878a8
+PODFILE CHECKSUM: 4413cb799738ccc3b45494e82a01f4e12a51367f
 
 COCOAPODS: 1.9.3

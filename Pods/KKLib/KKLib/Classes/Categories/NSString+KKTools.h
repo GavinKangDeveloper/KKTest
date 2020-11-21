@@ -12,14 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (KKTools)
 
 #pragma mark - 获得字符串显示的宽度或者高度
-/// 获得显示的字符串高度
-/// @param font 字体大小
-/// @param width 现实的宽度
-/// @param lineHeight 行高
+/**
+ 获得字符串高度
+ @param font 字体大小
+ @param width 现实的宽度
+ @param lineHeight 行高
+ */
 - (CGFloat)kk_getHeightWithFont:(UIFont *)font width:(CGFloat)width lineHeight:(CGFloat)lineHeight;
 
-/// 获得显示的字符串高度
-/// @param font 字体大小
+/**
+ 获得字符串宽度
+ @param font 字体大小
+ */
 - (CGFloat)kk_getWidthWithFont:(UIFont *)font;
 
 #pragma mark - 正则表达式验证内容
@@ -63,11 +67,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - 其它功能
 /**
- 小数点后字体缩小
- @param font 文本字体大小
- @return NSAttributedString 富文本内容
+ 空字符串 YES：真，NO：假
+ @param shouldRemoveSpaces 是否删除空格；YES ：删除空格
  */
-- (NSAttributedString *)kk_attributeForDecimalScaleWithFont:(UIFont *)font;
+- (BOOL)kk_checkIsNull:(BOOL)shouldRemoveSpaces;
+
+/**
+ 获取某个字符串或者汉字的首字母.
+ */
+- (NSString *)kk_getFirstCharactor;
+
 
 #pragma mark - 打开
 /**
