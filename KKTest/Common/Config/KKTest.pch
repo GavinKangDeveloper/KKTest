@@ -1,0 +1,22 @@
+//
+//  KKTest.pch
+//  KKTest
+//
+//  Created by ZhuKangKang on 2020/11/21.
+//  Copyright © 2020 ZKKMBP. All rights reserved.
+//
+
+#ifndef KKTest_pch
+#define KKTest_pch
+
+#import <KKLib/KKHeaderFileConfig.h>
+#import <MJRefresh.h>
+
+#import "KKCreateUIManager.h"
+
+#pragma mark - 颜色规范
+#define kkColorOfTableViewBackground      kkFuncUIColorFromOxValue(0xF3F4F5)// 表格背景颜色
+
+#define kkFuncOverSystemNum(system) @available(iOS system, *)
+
+#endif /* KKTest_pch */

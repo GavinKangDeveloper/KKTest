@@ -7,6 +7,7 @@
 //
 
 #import "KKLocationViewController.h"
+#import "KKCommonMethodManager.h"
 
 @interface KKLocationViewController ()<CLLocationManagerDelegate>
 

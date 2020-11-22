@@ -47,7 +47,7 @@
                    title:@"界面2"
                    image:@"API_hot_movie"
            selectedImage:@"API_hot_movie"];
-    if (kIsOS12OrLater) {
+    if (kkFuncOverSystemNum(12.0)) {
         // 解决「iOS 12.1 下，底部 Tab 在打开新页面后回来会先收缩再正常显示」问题
         self.tabBar.translucent = NO;
     }
@@ -66,7 +66,10 @@
     //    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:Gray_Text_COLOR,NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateNormal];
 
     //字体大小，颜色（被选中时）
-    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kColorOfBase,NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]forState:UIControlStateSelected];
+    [[UITabBarItem appearance]setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                      [UIColor redColor],NSForegroundColorAttributeName,
+                                                      [UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil]
+                                            forState:UIControlStateSelected];
 }
 
 /*

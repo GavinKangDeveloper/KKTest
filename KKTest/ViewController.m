@@ -28,8 +28,6 @@
  
     self.arrs = [[NSMutableArray alloc] initWithObjects:@"0", nil];
    
- 
-      
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

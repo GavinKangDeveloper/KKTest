@@ -8,12 +8,19 @@ target 'KKTest' do
   pod 'YYText', '1.0.7'
   pod 'FMDB', '2.7.5'
   pod 'SDWebImage','4.4.7'
+  pod 'AFNetworking' , '4.0.1'
+  pod 'SVProgressHUD', '2.2.5'
+  pod 'Masonry', '1.1.0'
+  pod 'FMCategory', '0.0.2'
+  pod 'MJRefresh', '3.5.0'
+  pod 'IQKeyboardManager'
+
+  # 主要用于 TableView 空数据占位
+  pod 'DZNEmptyDataSet','1.8.1'
+  
   pod 'IBProperty/Basis' , '1.2.3'
   #  pod 'AvoidCrash' , '2.5.2'
   pod 'KKLib' , '0.1.1'
-  pod 'AFNetworking' , '4.0.1'
-  pod 'SVProgressHUD', '2.2.5'
-  pod 'FMCategory', '0.0.2'
 
 end
 

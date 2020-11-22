@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"界面1";
-    self.view.backgroundColor = kColorOfBackground;
+    self.view.backgroundColor = [UIColor greenColor];
     
 }
 

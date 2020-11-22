@@ -19,17 +19,6 @@ typedef NS_ENUM(NSInteger, KKLimitsType) {
 
 @interface KKCommonMethodManager : NSObject
 
-#pragma mark - 是否允许 IQKeyboardManager ,YES : 允许
-+ (void)allowIQKeyboardManager:(BOOL)isAllow;
-
-/**
- *  根据网络响应数据，判断是否数据有效
- *
- *  @param responseObject 网络响应数据
- *
- *  @return 是否数据有效
- */
-+ (BOOL)isReturnFetchValid:(id)responseObject;
 
 #pragma mark - 图片视图执行缩放动画效果
 + (void)makeImageViewAnimate:(UIImageView *)imageView;
