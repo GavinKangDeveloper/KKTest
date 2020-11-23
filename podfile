@@ -16,11 +16,11 @@ target 'KKTest' do
   pod 'IQKeyboardManager'
 
   # 主要用于 TableView 空数据占位
-  pod 'DZNEmptyDataSet','1.8.1'
+  pod 'DZNEmptyDataSet', '1.8.1'
   
   pod 'IBProperty/Basis', '1.2.3'
-  pod 'AvoidCrash , '2.5.2'
-  pod 'KKLib', '0.1.1'
+  pod 'AvoidCrash', '2.5.2'
+  pod 'KKLib', '0.1.2'
 
 end
 

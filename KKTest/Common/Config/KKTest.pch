@@ -18,9 +18,6 @@
 #pragma mark - 颜色规范
 #define kkColorOfTableViewBackground      kkFuncUIColorFromOxValue(0xF3F4F5)// 表格背景颜色
 
-#pragma mark - 系统
-#define kkFuncOverSystemNum(system) @available(iOS system, *)
-
 //AppStore 相关的账号
 #define kkAppID                              @"1441400675"
 #define kkAPIAppStoreUpdate                  @"https://itunes.apple.com/lookup?id="kAppID; ///< 检查版本更新

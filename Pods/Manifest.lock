@@ -24,13 +24,13 @@ PODS:
   - IBProperty/Basis (1.2.3):
     - Aspects (~> 1.4.1)
   - IQKeyboardManager (6.5.6)
-  - KKLib (0.1.1):
-    - KKLib/Categories (= 0.1.1)
-    - KKLib/Configs (= 0.1.1)
-    - KKLib/Tools (= 0.1.1)
-  - KKLib/Categories (0.1.1)
-  - KKLib/Configs (0.1.1)
-  - KKLib/Tools (0.1.1)
+  - KKLib (0.1.2):
+    - KKLib/Categories (= 0.1.2)
+    - KKLib/Configs (= 0.1.2)
+    - KKLib/Tools (= 0.1.2)
+  - KKLib/Categories (0.1.2)
+  - KKLib/Configs (0.1.2)
+  - KKLib/Tools (0.1.2)
   - Masonry (1.1.0)
   - MJRefresh (3.5.0)
   - SDWebImage (4.4.7):
@@ -47,7 +47,7 @@ DEPENDENCIES:
   - FMDB (= 2.7.5)
   - IBProperty/Basis (= 1.2.3)
   - IQKeyboardManager
-  - KKLib (= 0.1.1)
+  - KKLib (= 0.1.2)
   - Masonry (= 1.1.0)
   - MJRefresh (= 3.5.0)
   - SDWebImage (= 4.4.7)
@@ -81,13 +81,13 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IBProperty: f33f843e3142b2bf18f8a0b035f1037373f0bac2
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  KKLib: f1e8f8c4bf0fbd93f1b6eb12c2e3b63739315d9b
+  KKLib: b23019761117041c7d8fc5d55ecabe6277e57935
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: a3cb0b825f180ef59ffc286f11bdd2b4359afe1a
+PODFILE CHECKSUM: a799b1ae7d9f91a61736949e922759be06b08338
 
 COCOAPODS: 1.9.3
