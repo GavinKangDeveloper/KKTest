@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import <AvoidCrash.h>
+#import "AppDelegate+Config.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [AvoidCrash makeAllEffective];
+    // 初始化配置
+    [self initConfigureWithOptions:launchOptions];
+    
+    
     
     return YES;
 }

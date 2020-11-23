@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KKBaseTabBarController : UITabBarController
-+ (instancetype)baseTabBar;
 
 @end
 

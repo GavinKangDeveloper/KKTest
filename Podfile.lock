@@ -15,6 +15,7 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
+  - AvoidCrash (2.5.2)
   - DZNEmptyDataSet (1.8.1)
   - FMCategory (0.0.2)
   - FMDB (2.7.5):
@@ -40,6 +41,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
+  - AvoidCrash (= 2.5.2)
   - DZNEmptyDataSet (= 1.8.1)
   - FMCategory (= 0.0.2)
   - FMDB (= 2.7.5)
@@ -58,6 +60,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Aspects
+    - AvoidCrash
     - DZNEmptyDataSet
     - FMDB
     - IBProperty
@@ -72,6 +75,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMCategory: ae245e1e26f485913aea9190f3eabeee2d6465d3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -84,6 +88,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 48fc92cea95f92c667df183e8a9452c0f0f25c23
+PODFILE CHECKSUM: a3cb0b825f180ef59ffc286f11bdd2b4359afe1a
 
 COCOAPODS: 1.9.3

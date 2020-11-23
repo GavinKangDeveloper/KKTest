@@ -18,10 +18,6 @@
 
 @implementation KKBaseTabBarController
 
-+ (instancetype)baseTabBar {
-    KKBaseTabBarController *tabBar = [[KKBaseTabBarController alloc] init];
-    return tabBar;
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

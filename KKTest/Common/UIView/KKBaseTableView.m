@@ -59,7 +59,7 @@
 }
 
 - (void)initEmptyData {
-    self.emptyDataOfImg = [UIImage imageNamed:@"common_empty_data"];
+    self.emptyDataOfImg = [UIImage imageNamed:@"kk_empty_list"];
     NSString *text = @"暂无数据~";
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14],
                                  NSForegroundColorAttributeName:kkFuncUIColorFromOxValue(0x999999)};
