@@ -13,12 +13,15 @@
 
 + (void)load {
 #ifdef DEBUG
-    //原本的viewWillAppear方法
-    Method viewWillAppear = class_getInstanceMethod(self, @selector(viewWillAppear:));
-    //需要替换成 能够输出日志的viewWillAppear
-    Method logViewWillAppear = class_getInstanceMethod(self, @selector(logViewWillAppear:));
-    //两方法进行交换
-    method_exchangeImplementations(viewWillAppear, logViewWillAppear);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        //原本的viewWillAppear方法
+        Method viewWillAppear = class_getInstanceMethod(self, @selector(viewWillAppear:));
+        //需要替换成 能够输出日志的viewWillAppear
+        Method logViewWillAppear = class_getInstanceMethod(self, @selector(logViewWillAppear:));
+        //两方法进行交换
+        method_exchangeImplementations(viewWillAppear, logViewWillAppear);
+    });
 #endif
 }
 

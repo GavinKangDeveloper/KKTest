@@ -32,6 +32,7 @@ PODS:
   - KKLib/Configs (0.1.2)
   - KKLib/Tools (0.1.2)
   - Masonry (1.1.0)
+  - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - KKLib (= 0.1.2)
   - Masonry (= 1.1.0)
+  - MJExtension
   - MJRefresh (= 3.5.0)
   - SDWebImage (= 4.4.7)
   - SVProgressHUD (= 2.2.5)
@@ -67,6 +69,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - KKLib
     - Masonry
+    - MJExtension
     - MJRefresh
     - SDWebImage
     - SVProgressHUD
@@ -83,11 +86,12 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   KKLib: b23019761117041c7d8fc5d55ecabe6277e57935
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: a799b1ae7d9f91a61736949e922759be06b08338
+PODFILE CHECKSUM: 29592d839a6c9bb283c683117899369b0a4d5a98
 
 COCOAPODS: 1.9.3

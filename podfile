@@ -13,6 +13,7 @@ target 'KKTest' do
   pod 'Masonry', '1.1.0'
   pod 'FMCategory', '0.0.2'
   pod 'MJRefresh', '3.5.0'
+  pod 'MJExtension', '3.2.2'
   pod 'IQKeyboardManager'
 
   # 主要用于 TableView 空数据占位
