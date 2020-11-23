@@ -1,8 +1,8 @@
 //
-//  KKTestCell.h
+//  KKMeVC.h
 //  KKTest
 //
-//  Created by ZhuKangKang on 2020/10/30.
+//  Created by ZhuKangKang on 2020/11/23.
 //  Copyright © 2020 ZKKMBP. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KKTestCell : UITableViewCell
-
-+ (CGFloat)getHeight;
+@interface KKMeVC : KKBaseViewController
 
 @end
 

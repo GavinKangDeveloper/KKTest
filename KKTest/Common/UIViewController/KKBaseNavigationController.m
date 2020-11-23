@@ -8,7 +8,8 @@
 
 #import "KKBaseNavigationController.h"
 
-@interface KKBaseNavigationController ()
+@interface KKBaseNavigationController ()<UINavigationControllerDelegate>
+@property (nonatomic,assign)BOOL isPushing;
 
 @end
 
@@ -16,7 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.delegate =self;
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    if (self.isPushing) {
+        //如果已经isPushing,但尚未didShow,则返回不再二次push
+        return;
+    }else{
+        self.isPushing = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    //didShow之后,重置isPushing状态为NO,以达到下次可以正常push的目的;
+    self.isPushing = NO;
 }
 
 /*

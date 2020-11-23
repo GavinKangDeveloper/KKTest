@@ -13,10 +13,31 @@
 #import <MJRefresh.h>
 
 #import "KKCreateUIManager.h"
+#import "KKBaseViewController.h"
 
 #pragma mark - 颜色规范
 #define kkColorOfTableViewBackground      kkFuncUIColorFromOxValue(0xF3F4F5)// 表格背景颜色
 
+#pragma mark - 系统
 #define kkFuncOverSystemNum(system) @available(iOS system, *)
+
+//AppStore 相关的账号
+#define kkAppID                              @"1441400675"
+#define kkAPIAppStoreUpdate                  @"https://itunes.apple.com/lookup?id="kAppID; ///< 检查版本更新
+#define kkAPIAppStore                        @"https://itunes.apple.com/app/id"kAppID; ///< App Store 地址
+#define kkAPIAppStoreEvaluate                @"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id="kAppID@"&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"; ///< 评论地址
+#define kkAPIAppStoreEvaluateForOS11OrLater  @"itms-apps://itunes.apple.com/cn/app/id"kAppID@"?mt=8&action=write-review"; ///< 评论地址（iOS 11 以上）
+
+
+#pragma mark - 开发使用域名
+
+
+#pragma mark - 正式域名
+
+
+#pragma mark - 第三方相关的 key
+
+
+
 
 #endif /* KKTest_pch */
