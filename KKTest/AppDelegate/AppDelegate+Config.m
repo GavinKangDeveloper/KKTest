@@ -26,7 +26,7 @@
     [UIControl kk_exchangeClickMethod];
     
     // 初始化 home
-    [self creatTabBarController];
+//    [self creatTabBarController];
 }
 
 - (void)creatTabBarController {
