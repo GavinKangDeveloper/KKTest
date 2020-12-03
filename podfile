@@ -22,6 +22,7 @@ target 'KKTest' do
   pod 'IBProperty/Basis', '1.2.3'
   pod 'AvoidCrash', '2.5.2'
   pod 'KKLib', '0.1.2'
+  pod 'BRPickerView', '2.7.3'
 
 end
 

@@ -16,6 +16,18 @@ PODS:
     - AFNetworking/NSURLSession
   - Aspects (1.4.1)
   - AvoidCrash (2.5.2)
+  - BRPickerView (2.7.3):
+    - BRPickerView/AddressPickerView (= 2.7.3)
+    - BRPickerView/Base (= 2.7.3)
+    - BRPickerView/DatePickerView (= 2.7.3)
+    - BRPickerView/StringPickerView (= 2.7.3)
+  - BRPickerView/AddressPickerView (2.7.3):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.7.3)
+  - BRPickerView/DatePickerView (2.7.3):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.7.3):
+    - BRPickerView/Base
   - DZNEmptyDataSet (1.8.1)
   - FMCategory (0.0.2)
   - FMDB (2.7.5):
@@ -43,6 +55,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
   - AvoidCrash (= 2.5.2)
+  - BRPickerView (= 2.7.3)
   - DZNEmptyDataSet (= 1.8.1)
   - FMCategory (= 0.0.2)
   - FMDB (= 2.7.5)
@@ -50,7 +63,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - KKLib (= 0.1.2)
   - Masonry (= 1.1.0)
-  - MJExtension
+  - MJExtension (= 3.2.2)
   - MJRefresh (= 3.5.0)
   - SDWebImage (= 4.4.7)
   - SVProgressHUD (= 2.2.5)
@@ -63,6 +76,7 @@ SPEC REPOS:
     - AFNetworking
     - Aspects
     - AvoidCrash
+    - BRPickerView
     - DZNEmptyDataSet
     - FMDB
     - IBProperty
@@ -79,6 +93,7 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMCategory: ae245e1e26f485913aea9190f3eabeee2d6465d3
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -92,6 +107,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 29592d839a6c9bb283c683117899369b0a4d5a98
+PODFILE CHECKSUM: f18fbe1c7a292252a5088fefee1708dc327deb34
 
 COCOAPODS: 1.9.3

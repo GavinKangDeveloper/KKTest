@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		325ABAD8256CA313005E8445 /* KKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 325ABAD7256CA313005E8445 /* KKCountDownButton.m */; };
 		32C096D6254190E400872083 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C096D5254190E400872083 /* NSDate+Extension.m */; };
+		32E242D5257881E3006EE5E8 /* stages.json in Resources */ = {isa = PBXBuildFile; fileRef = 32E242D4257881E3006EE5E8 /* stages.json */; };
 		32F2FA8A2569278A0025AC4F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA55256927890025AC4F /* KKUtilityNotice.m */; };
 		32F2FA8B2569278A0025AC4F /* UIImage+WaterMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA59256927890025AC4F /* UIImage+WaterMake.m */; };
 		32F2FA8C2569278A0025AC4F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA5C256927890025AC4F /* UIView+Animation.m */; };
@@ -66,6 +67,7 @@
 		325ABAD7256CA313005E8445 /* KKCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCountDownButton.m; sourceTree = "<group>"; };
 		32C096D4254190E400872083 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		32C096D5254190E400872083 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		32E242D4257881E3006EE5E8 /* stages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stages.json; sourceTree = "<group>"; };
 		32F2FA55256927890025AC4F /* KKUtilityNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
 		32F2FA56256927890025AC4F /* KKUtilityNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUtilityNotice.h; sourceTree = "<group>"; };
 		32F2FA59256927890025AC4F /* UIImage+WaterMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WaterMake.m"; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 				81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32E242D3257881D5006EE5E8 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				32E242D4257881E3006EE5E8 /* stages.json */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 		32F2FA53256927890025AC4F /* Common */ = {
@@ -273,8 +283,8 @@
 		32F2FA802569278A0025AC4F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				32F2FA68256927890025AC4F /* KKHTTPSessionManager.m */,
 				32F2FA69256927890025AC4F /* KKHTTPSessionManager.h */,
+				32F2FA68256927890025AC4F /* KKHTTPSessionManager.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -403,6 +413,7 @@
 		785C651524AA1FF200763C46 /* KKTest */ = {
 			isa = PBXGroup;
 			children = (
+				32E242D3257881D5006EE5E8 /* Third */,
 				32F2FB2B256B4C0B0025AC4F /* AppDelegate */,
 				32F2FA53256927890025AC4F /* Common */,
 				32F2FB6B256B63710025AC4F /* Home */,
@@ -556,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32F2FB82256B639B0025AC4F /* KKMeVC.xib in Resources */,
+				32E242D5257881E3006EE5E8 /* stages.json in Resources */,
 				785C652624AA1FF600763C46 /* LaunchScreen.storyboard in Resources */,
 				785C652324AA1FF600763C46 /* Assets.xcassets in Resources */,
 				784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */,
