@@ -8,14 +8,13 @@
 
 #import "ViewController.h"
 #import "KKSecondVC.h"
-#import "NSDate+Extension.h"
+#import <WebKit/WebKit.h>
+#import "KKWebView.h"
+#import "KKThirdVC.h"
 
-@interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *btnTemp;
-@property (weak, nonatomic) IBOutlet UITextView *textV;
-@property (weak, nonatomic) IBOutlet UITextField *textF;
-@property (nonatomic, strong) NSMutableArray *arrs;
+@interface ViewController ()<WKNavigationDelegate>
 
+@property (nonatomic, strong) WKWebView *webView;
 @end
 
 @implementation ViewController
@@ -23,30 +22,42 @@
 /// 测试 git 添加、推送的流程
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.textV.delegate = self;
- 
-    self.arrs = [[NSMutableArray alloc] initWithObjects:@"0", nil];
-   
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-
     
-}
-
-- (IBAction)onButtonClicked:(UIButton *)sender {
-    NSLog(@"--------");
-}
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    NSString *urlStr = @"http://people.mozilla.org/~rnewman/fennec/mem.html";
+//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+//
+//    self.webView.navigationDelegate = self;
+//    [self.webView loadRequest:request];
     
+    [KKWebView sharedManager].webView;
 }
-
-- (void)gotoSecondVC {
-    KKSecondVC * VC = [[KKSecondVC  alloc]init];
+- (IBAction)rightButtonAction:(UIBarButtonItem *)sender {
+    KKThirdVC *VC = [[KKThirdVC alloc] init];
+    
     [self.navigationController pushViewController:VC animated:YES];
 }
 
+- (void)webViewWebContentProcessDidTerminate:(WKWebView *)webView API_AVAILABLE(macosx(10.11), ios(9.0)) {
+    NSLog(@"---------");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self gotoSecondVC:NO];
+}
+
+- (void)gotoSecondVC:(BOOL)isLoad {
+    KKSecondVC * VC = [[KKSecondVC  alloc]init];
+    VC.isLoaded = isLoad;
+    [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (WKWebView *)webView {
+    if (!_webView) {
+        _webView = [[WKWebView alloc] init];
+        _webView.frame = CGRectMake(0, 0, kkWidthOfMainScreen, kkHeightOfMainScreen);
+        [self.view addSubview:_webView];
+    }
+    return _webView;
+}
 
 @end

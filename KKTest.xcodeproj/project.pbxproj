@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		325ABAD8256CA313005E8445 /* KKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 325ABAD7256CA313005E8445 /* KKCountDownButton.m */; };
+		3294254E25B580C7001D36F8 /* KKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3294254C25B580C7001D36F8 /* KKWebView.m */; };
+		3294255525B582EA001D36F8 /* KKThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3294255325B582EA001D36F8 /* KKThirdVC.m */; };
+		3294255625B582EA001D36F8 /* KKThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294255425B582EA001D36F8 /* KKThirdVC.xib */; };
 		32C096D6254190E400872083 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C096D5254190E400872083 /* NSDate+Extension.m */; };
 		32F2FA8A2569278A0025AC4F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA55256927890025AC4F /* KKUtilityNotice.m */; };
 		32F2FA8B2569278A0025AC4F /* UIImage+WaterMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA59256927890025AC4F /* UIImage+WaterMake.m */; };
@@ -64,6 +67,11 @@
 /* Begin PBXFileReference section */
 		325ABAD6256CA313005E8445 /* KKCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCountDownButton.h; sourceTree = "<group>"; };
 		325ABAD7256CA313005E8445 /* KKCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCountDownButton.m; sourceTree = "<group>"; };
+		3294254C25B580C7001D36F8 /* KKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebView.m; sourceTree = "<group>"; };
+		3294254D25B580C7001D36F8 /* KKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebView.h; sourceTree = "<group>"; };
+		3294255225B582EA001D36F8 /* KKThirdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKThirdVC.h; sourceTree = "<group>"; };
+		3294255325B582EA001D36F8 /* KKThirdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKThirdVC.m; sourceTree = "<group>"; };
+		3294255425B582EA001D36F8 /* KKThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKThirdVC.xib; sourceTree = "<group>"; };
 		32C096D4254190E400872083 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		32C096D5254190E400872083 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		32F2FA55256927890025AC4F /* KKUtilityNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
@@ -412,9 +420,14 @@
 				784F255524C7DB6C0053A717 /* KKSecondVC.h */,
 				784F255624C7DB6C0053A717 /* KKSecondVC.m */,
 				784F255724C7DB6C0053A717 /* KKSecondVC.xib */,
+				3294255225B582EA001D36F8 /* KKThirdVC.h */,
+				3294255325B582EA001D36F8 /* KKThirdVC.m */,
+				3294255425B582EA001D36F8 /* KKThirdVC.xib */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				32C096D4254190E400872083 /* NSDate+Extension.h */,
 				32C096D5254190E400872083 /* NSDate+Extension.m */,
+				3294254D25B580C7001D36F8 /* KKWebView.h */,
+				3294254C25B580C7001D36F8 /* KKWebView.m */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
 				785C652724AA1FF600763C46 /* Info.plist */,
@@ -559,6 +572,7 @@
 				785C652624AA1FF600763C46 /* LaunchScreen.storyboard in Resources */,
 				785C652324AA1FF600763C46 /* Assets.xcassets in Resources */,
 				784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */,
+				3294255625B582EA001D36F8 /* KKThirdVC.xib in Resources */,
 				32F2FB77256B638A0025AC4F /* KKHomeVC.xib in Resources */,
 				785C652124AA1FF200763C46 /* Main.storyboard in Resources */,
 			);
@@ -643,6 +657,7 @@
 				32F2FA942569278A0025AC4F /* KKBaseViewController.m in Sources */,
 				32C096D6254190E400872083 /* NSDate+Extension.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
+				3294255525B582EA001D36F8 /* KKThirdVC.m in Sources */,
 				32F2FA8A2569278A0025AC4F /* KKUtilityNotice.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
 				32F2FB81256B639B0025AC4F /* KKMeVC.m in Sources */,
@@ -653,6 +668,7 @@
 				32F2FA922569278A0025AC4F /* UIViewController+log.m in Sources */,
 				32F2FBB5256B87640025AC4F /* NSString+KKEncryption.m in Sources */,
 				32F2FAC3256A7FB70025AC4F /* KKCreateUIManager.m in Sources */,
+				3294254E25B580C7001D36F8 /* KKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,12 @@
 
 #import "KKSecondVC.h"
 #import <NSTimer+KKWeakTimer.h>
+#import <WebKit/WebKit.h>
+#import "KKWebView.h"
+#import "KKThirdVC.h"
 
 @interface KKSecondVC ()
+@property (nonatomic, strong) WKWebView *webView;
 
 @end
 
@@ -34,8 +38,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor greenColor];
+    
+    self.navigationController.title = @"TWO";
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"下一页"
+                                                             style:UIBarButtonItemStylePlain
+                                                             target:self
+                                                             action:@selector(gotoPage)];
+    self.navigationController.navigationItem.rightBarButtonItem = item;
+    
+    NSString *urlStr = @"http://www.dianzhuan666.com";
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+    
+    if (self.isLoaded) {
+        [[KKWebView sharedManager].webView loadRequest:request];
+    } else {
+        [self.webView loadRequest:request];
+    }
+}
 
-  
+- (void)gotoPage {
+    KKThirdVC *VC = [[KKThirdVC alloc] init];
+    
+    [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (WKWebView *)webView {
+    if (!_webView) {
+        _webView = [[WKWebView alloc] init];
+        _webView.frame = CGRectMake(0, 0, kkWidthOfMainScreen, kkHeightOfMainScreen);
+        [self.view addSubview:_webView];
+    }
+    return _webView;
 }
 
 
