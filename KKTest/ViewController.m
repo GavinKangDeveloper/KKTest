@@ -10,6 +10,10 @@
 #import "KKSecondVC.h"
 #import "NSDate+Extension.h"
 
+//#import "KKSwiftVC-Swift.h"
+
+#import "KKTest-Swift.h"
+
 @interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
 @property (weak, nonatomic) IBOutlet UITextView *textV;
@@ -32,7 +36,8 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    
+    KKSwiftVC *VC = [[KKSwiftVC alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (IBAction)onButtonClicked:(UIButton *)sender {

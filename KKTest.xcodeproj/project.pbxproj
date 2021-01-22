@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		325ABAD8256CA313005E8445 /* KKCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 325ABAD7256CA313005E8445 /* KKCountDownButton.m */; };
+		3294256325B7CCB6001D36F8 /* KKSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294256125B7CCB6001D36F8 /* KKSwiftVC.swift */; };
+		3294256425B7CCB6001D36F8 /* KKSwiftVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294256225B7CCB6001D36F8 /* KKSwiftVC.xib */; };
 		32C096D6254190E400872083 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C096D5254190E400872083 /* NSDate+Extension.m */; };
 		32F2FA8A2569278A0025AC4F /* KKUtilityNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA55256927890025AC4F /* KKUtilityNotice.m */; };
 		32F2FA8B2569278A0025AC4F /* UIImage+WaterMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2FA59256927890025AC4F /* UIImage+WaterMake.m */; };
@@ -64,6 +66,9 @@
 /* Begin PBXFileReference section */
 		325ABAD6256CA313005E8445 /* KKCountDownButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCountDownButton.h; sourceTree = "<group>"; };
 		325ABAD7256CA313005E8445 /* KKCountDownButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCountDownButton.m; sourceTree = "<group>"; };
+		3294256025B7CCB6001D36F8 /* KKTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		3294256125B7CCB6001D36F8 /* KKSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKSwiftVC.swift; sourceTree = "<group>"; };
+		3294256225B7CCB6001D36F8 /* KKSwiftVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKSwiftVC.xib; sourceTree = "<group>"; };
 		32C096D4254190E400872083 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		32C096D5254190E400872083 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		32F2FA55256927890025AC4F /* KKUtilityNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUtilityNotice.m; sourceTree = "<group>"; };
@@ -412,6 +417,8 @@
 				784F255524C7DB6C0053A717 /* KKSecondVC.h */,
 				784F255624C7DB6C0053A717 /* KKSecondVC.m */,
 				784F255724C7DB6C0053A717 /* KKSecondVC.xib */,
+				3294256125B7CCB6001D36F8 /* KKSwiftVC.swift */,
+				3294256225B7CCB6001D36F8 /* KKSwiftVC.xib */,
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				32C096D4254190E400872083 /* NSDate+Extension.h */,
 				32C096D5254190E400872083 /* NSDate+Extension.m */,
@@ -419,6 +426,7 @@
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
 				785C652724AA1FF600763C46 /* Info.plist */,
 				785C652824AA1FF600763C46 /* main.m */,
+				3294256025B7CCB6001D36F8 /* KKTest-Bridging-Header.h */,
 			);
 			path = KKTest;
 			sourceTree = "<group>";
@@ -519,6 +527,7 @@
 				TargetAttributes = {
 					785C651224AA1FF200763C46 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1210;
 					};
 					785C652D24AA1FF600763C46 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -558,6 +567,7 @@
 				32F2FB82256B639B0025AC4F /* KKMeVC.xib in Resources */,
 				785C652624AA1FF600763C46 /* LaunchScreen.storyboard in Resources */,
 				785C652324AA1FF600763C46 /* Assets.xcassets in Resources */,
+				3294256425B7CCB6001D36F8 /* KKSwiftVC.xib in Resources */,
 				784F255924C7DB6C0053A717 /* KKSecondVC.xib in Resources */,
 				32F2FB77256B638A0025AC4F /* KKHomeVC.xib in Resources */,
 				785C652124AA1FF200763C46 /* Main.storyboard in Resources */,
@@ -645,6 +655,7 @@
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
 				32F2FA8A2569278A0025AC4F /* KKUtilityNotice.m in Sources */,
 				785C652924AA1FF600763C46 /* main.m in Sources */,
+				3294256325B7CCB6001D36F8 /* KKSwiftVC.swift in Sources */,
 				32F2FB81256B639B0025AC4F /* KKMeVC.m in Sources */,
 				32F2FA992569278A0025AC4F /* KKDateManager.m in Sources */,
 				32F2FA952569278A0025AC4F /* KKBaseNavigationController.m in Sources */,
@@ -826,6 +837,7 @@
 			baseConfigurationReference = 73122D74582238632FE39F71 /* Pods-KKTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5652N8GDSW;
 				INFOPLIST_FILE = KKTest/Info.plist;
@@ -836,6 +848,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangkang.KKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKTest/KKTest-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -845,6 +861,7 @@
 			baseConfigurationReference = 3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5652N8GDSW;
 				INFOPLIST_FILE = KKTest/Info.plist;
@@ -855,6 +872,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangkang.KKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKTest/KKTest-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -862,6 +882,7 @@
 		785C654624AA1FF600763C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
@@ -882,6 +903,7 @@
 		785C654724AA1FF600763C46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
@@ -902,6 +924,7 @@
 		785C654924AA1FF600763C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
 				INFOPLIST_FILE = KKTestUITests/Info.plist;
@@ -920,6 +943,7 @@
 		785C654A24AA1FF600763C46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
 				INFOPLIST_FILE = KKTestUITests/Info.plist;
