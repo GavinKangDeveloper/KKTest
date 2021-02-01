@@ -26,7 +26,7 @@
 
     self.textV.delegate = self;
  
-    self.arrs = [[NSMutableArray alloc] initWithObjects:@"0", nil];
+//    self.arrs = [[NSMutableArray alloc] initWithObjects:@"0", nil];
    
 }
 
