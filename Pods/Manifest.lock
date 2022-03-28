@@ -34,6 +34,9 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.2.2)
   - MJRefresh (3.5.0)
+  - ReactiveCocoa (10.0.0):
+    - ReactiveSwift (~> 6.0)
+  - ReactiveSwift (6.7.0)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
@@ -50,8 +53,9 @@ DEPENDENCIES:
   - IQKeyboardManager
   - KKLib (= 0.1.2)
   - Masonry (= 1.1.0)
-  - MJExtension
+  - MJExtension (= 3.2.2)
   - MJRefresh (= 3.5.0)
+  - ReactiveCocoa (= 10.0.0)
   - SDWebImage (= 4.4.7)
   - SVProgressHUD (= 2.2.5)
   - YYText (= 1.0.7)
@@ -71,6 +75,8 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - MJRefresh
+    - ReactiveCocoa
+    - ReactiveSwift
     - SDWebImage
     - SVProgressHUD
     - YYText
@@ -88,10 +94,12 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  ReactiveCocoa: 6d4c37ba236f5d9a7a55b2172cd09f19ba85f574
+  ReactiveSwift: 208201d6ecc9734196d147aa76bc1f24b1b821fe
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 29592d839a6c9bb283c683117899369b0a4d5a98
+PODFILE CHECKSUM: f4a0dad66c14f7401a8adee30a019b3315caf994
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

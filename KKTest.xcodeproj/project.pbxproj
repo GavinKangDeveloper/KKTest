@@ -42,6 +42,8 @@
 		785C652924AA1FF600763C46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C652824AA1FF600763C46 /* main.m */; };
 		785C653324AA1FF600763C46 /* KKTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653224AA1FF600763C46 /* KKTestTests.m */; };
 		785C653E24AA1FF600763C46 /* KKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785C653D24AA1FF600763C46 /* KKTestUITests.m */; };
+		78AE27F527ED6445004EB50B /* KKTestRACModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AE27F427ED6445004EB50B /* KKTestRACModel.m */; };
+		78F01C6F27F1506D00A170A0 /* SwiftRACTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F01C6E27F1506D00A170A0 /* SwiftRACTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,10 @@
 		785C653924AA1FF600763C46 /* KKTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		785C653D24AA1FF600763C46 /* KKTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestUITests.m; sourceTree = "<group>"; };
 		785C653F24AA1FF600763C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AE27F327ED6445004EB50B /* KKTestRACModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKTestRACModel.h; sourceTree = "<group>"; };
+		78AE27F427ED6445004EB50B /* KKTestRACModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKTestRACModel.m; sourceTree = "<group>"; };
+		78F01C6D27F1506C00A170A0 /* KKTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KKTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		78F01C6E27F1506D00A170A0 /* SwiftRACTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRACTest.swift; sourceTree = "<group>"; };
 		81B5EA252F29F5792CD8E774 /* libPods-KKTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KKTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -415,10 +421,14 @@
 				785C651F24AA1FF200763C46 /* Main.storyboard */,
 				32C096D4254190E400872083 /* NSDate+Extension.h */,
 				32C096D5254190E400872083 /* NSDate+Extension.m */,
+				78AE27F327ED6445004EB50B /* KKTestRACModel.h */,
+				78AE27F427ED6445004EB50B /* KKTestRACModel.m */,
 				785C652224AA1FF600763C46 /* Assets.xcassets */,
 				785C652424AA1FF600763C46 /* LaunchScreen.storyboard */,
 				785C652724AA1FF600763C46 /* Info.plist */,
 				785C652824AA1FF600763C46 /* main.m */,
+				78F01C6E27F1506D00A170A0 /* SwiftRACTest.swift */,
+				78F01C6D27F1506C00A170A0 /* KKTest-Bridging-Header.h */,
 			);
 			path = KKTest;
 			sourceTree = "<group>";
@@ -519,6 +529,7 @@
 				TargetAttributes = {
 					785C651224AA1FF200763C46 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1310;
 					};
 					785C652D24AA1FF600763C46 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -635,11 +646,13 @@
 				784F255824C7DB6C0053A717 /* KKSecondVC.m in Sources */,
 				32F2FA912569278A0025AC4F /* KKLocationViewController.m in Sources */,
 				32F2FA902569278A0025AC4F /* KKHTTPSessionManager.m in Sources */,
+				78F01C6F27F1506D00A170A0 /* SwiftRACTest.swift in Sources */,
 				32F2FA8B2569278A0025AC4F /* UIImage+WaterMake.m in Sources */,
 				325ABAD8256CA313005E8445 /* KKCountDownButton.m in Sources */,
 				32F2FA932569278A0025AC4F /* KKBaseTabBarController.m in Sources */,
 				32F2FA9A2569278A0025AC4F /* KKLoginManger.m in Sources */,
 				32F2FA8C2569278A0025AC4F /* UIView+Animation.m in Sources */,
+				78AE27F527ED6445004EB50B /* KKTestRACModel.m in Sources */,
 				32F2FA942569278A0025AC4F /* KKBaseViewController.m in Sources */,
 				32C096D6254190E400872083 /* NSDate+Extension.m in Sources */,
 				785C651824AA1FF200763C46 /* AppDelegate.m in Sources */,
@@ -826,16 +839,20 @@
 			baseConfigurationReference = 73122D74582238632FE39F71 /* Pods-KKTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5652N8GDSW;
+				DEVELOPMENT_TEAM = B5BG6VHVXY;
 				INFOPLIST_FILE = KKTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangkang.KKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKTest/KKTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -845,16 +862,19 @@
 			baseConfigurationReference = 3734608E3E7AFC8629EC07FD /* Pods-KKTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5652N8GDSW;
+				DEVELOPMENT_TEAM = B5BG6VHVXY;
 				INFOPLIST_FILE = KKTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangkang.KKTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KKTest/KKTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -862,6 +882,7 @@
 		785C654624AA1FF600763C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
@@ -882,6 +903,7 @@
 		785C654724AA1FF600763C46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
@@ -902,6 +924,7 @@
 		785C654924AA1FF600763C46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
 				INFOPLIST_FILE = KKTestUITests/Info.plist;
@@ -920,6 +943,7 @@
 		785C654A24AA1FF600763C46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5ATE7EV45;
 				INFOPLIST_FILE = KKTestUITests/Info.plist;

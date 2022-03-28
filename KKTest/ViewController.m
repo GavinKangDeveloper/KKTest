@@ -9,12 +9,15 @@
 #import "ViewController.h"
 #import "KKSecondVC.h"
 #import "NSDate+Extension.h"
+#import "KKTestRACModel.h"
 
 @interface ViewController ()<UIScrollViewDelegate ,UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnTemp;
 @property (weak, nonatomic) IBOutlet UITextView *textV;
 @property (weak, nonatomic) IBOutlet UITextField *textF;
 @property (nonatomic, strong) NSMutableArray *arrs;
+@property (weak, nonatomic) IBOutlet UILabel *lbl;
+@property (nonatomic, strong) KKTestRACModel *racModel;
 
 @end
 
@@ -26,12 +29,17 @@
 
     self.textV.delegate = self;
  
-//    self.arrs = [[NSMutableArray alloc] initWithObjects:@"0", nil];
+    self.racModel = [KKTestRACModel new];
+    self.racModel.name = @"kk1";
    
+    self.lbl.text = self.racModel.name;
+    
+//    RAC(self.btnTemp, text) = [[[RACObserve(_itemModel,rightText) distinctUntilChanged] takeUntil:self.rac_prepareForReuseSignal] deliverOnMainThread];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
+    
     
 }
 
